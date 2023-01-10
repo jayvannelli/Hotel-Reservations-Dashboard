@@ -5,9 +5,6 @@ from src.data import df
 def main():
     st.title("Room Type Analysis")
 
-    segment_type = st.selectbox(label="Select segment type:",
-                                options=df['market_segment_type'].unique())
-
     beginning_date_selection = st.date_input(label="Starting date")
     ending_date_selection = st.date_input(label="Ending date")
 
